@@ -1,0 +1,118 @@
+/* Full viewport split layout */
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Left Hero section */
+.login-hero {
+  flex: 1;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.login-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.login-hero p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Right Form section */
+.login-form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 40px;
+}
+
+/* Form styling */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Input styling */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-group input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.show-hide-btn {
+  margin-left: 10px;
+  border: none;
+  background: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Login button */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg,#0ff,#00f);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  transform: scale(1.03);
+}
+
+/* Footer link */
+.form-footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.form-footer a {
+  color: #007bff;
+  text-decoration: none;
+}

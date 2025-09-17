@@ -1,0 +1,17 @@
+/* Styling for the Link component to remove default link appearance */
+.dashboard-card-link {
+  text-decoration: none;
+  color: inherit; /* Use the default text color */
+  display: block; /* Make the link fill the column */
+  height: 100%;
+}
+
+/* Add a subtle hover effect to the card inside the link */
+.dashboard-card-link .card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.dashboard-card-link:hover .card {
+  transform: translateY(-5px); /* Lift the card up slightly */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+}

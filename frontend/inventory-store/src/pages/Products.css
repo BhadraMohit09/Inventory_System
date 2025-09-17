@@ -1,0 +1,43 @@
+/* --- 4. CSS to make the table responsive --- */
+
+/* On screens smaller than 768px */
+@media (max-width: 767px) {
+  /* Hide the table header */
+  .table-responsive-cards thead {
+    display: none;
+  }
+
+  /* Make each table row behave like a card */
+  .table-responsive-cards tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+  }
+
+  /* Make table cells stack vertically */
+  .table-responsive-cards td {
+    display: block;
+    text-align: right; /* Align content to the right */
+    border: none;
+    border-bottom: 1px solid #eee; /* Separator line */
+    position: relative;
+    padding-left: 50%; /* Make space for the label */
+  }
+
+  /* Use the data-label attribute to create a label on the left */
+  .table-responsive-cards td::before {
+    content: attr(data-label); /* The magic happens here */
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 1rem;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  /* Style the last cell (actions) differently */
+  .table-responsive-cards td:last-child {
+    border-bottom: 0;
+  }
+}
