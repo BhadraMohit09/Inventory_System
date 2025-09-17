@@ -142,9 +142,6 @@ router.put("/change-password", auth, async (req, res) => {
             error: err.message
         });
     }
-});
-
-
-or 
+}); 
 
 module.exports = router;

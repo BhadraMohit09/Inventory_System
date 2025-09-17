@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:7000/api",
+  baseURL: "https://inventory-system-0n7s.onrender.com/api",
 });
 
 // Add token automatically
